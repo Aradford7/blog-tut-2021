@@ -33,18 +33,49 @@
      
      <!-- MATERIAL DESIGN ICONIC FONT -->
      <link rel="stylesheet" href="../design_files/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
-     <title>BLOG APP</title>
+     <title>Sign Up</title>
   </head>
   <body>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="view/signup.html">Sign Up</a>
-      <a href="view/login.html">Login</a>
-    </nav>
- 
-    <h1>Welcome to the blog</h1>
+    
 
-
+    
+    <div class="wrapper" style="background-image:url('../design_files/images/registerback.jpg');">
+        <div class="inner">
+            <div class="image-holder">
+                 <img src="../design_files/images/registration-form-1.jpg">
+            </div>
+         <form action="">
+             <h3>Register</h3>
+             <div class="form-wrapper">
+                 <input id="email" type="email" placeholder="Email Address" class="form-control">
+                 <i class="zmdi zmdi zmdi-email"></i>
+             </div>
+             <div class="form-wrapper">
+                 <input id="password" type="password" placeholder="Password" class="form-control">
+                 <i class="zmdi zmdi zmdi-lock"></i>
+             </div>
+             <div class="form-wrapper">
+                 <input id="confirmPassword" type="password" placeholder="Confirm Password" class="form-control">
+                 <i class="zmdi zmdi zmdi-lock"></i>
+             </div>
+     
+             <div class="form-group container-login100-form-btn">
+                 <button id="btn-signup" type="button">
+                     Register
+                     <i class="zmdi zmdi-arrow-right"></i>
+                 </button>
+             </div>
+     
+             <div class="w-full text-center" style="margin-top:39%; font-size: 15px;">
+                 <a href="login.html" class="text-dark">
+                     Already have an account?
+                 </a>
+             </div>
+         </form>
+        </div>
+     </div>
+  
+    
 <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script>
