@@ -1,13 +1,30 @@
 
-import * as functions from 'firebase-functions';
+
+//const api_key=process.env.API_KEY
+require('dotenv').config()
+
+require('dotenv').config()
+
+console.log(" TESTING IF IT WORKS")
+
+const dotenv = require('dotenv')
+
+const api_key=process.env.API_KEY;
+const result = dotenv.config()
+ 
+if (result.error) {
+  throw result.error
+}
+ 
+console.log(result.parsed)
 
 //see your keys here:
-const fireapi = require('fireapi')(functions.config().fireapi.key);
+//const fireapi = require('fireapi')(functions.config().fireapi.key);
 
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-    apiKey: key,
+var firebaseConfig = {
+    apiKey: api_key,
     authDomain: "blogtutorial2021.firebaseapp.com",
     projectId: "blogtutorial2021",
     storageBucket: "blogtutorial2021.appspot.com",
@@ -20,4 +37,6 @@ const firebaseConfig = {
   firebase.analytics();
 
 
-  console.log('api key is hidden?')
+ 
+
+ 
